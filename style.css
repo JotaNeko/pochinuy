@@ -13,6 +13,7 @@ body {
 }
 
 .main-video {
+    margin-top: 20px;
   opacity: 0;
   width: 230px;
   height: 165px;
@@ -74,11 +75,11 @@ body {
 
 @keyframes fadeIn {
   0% {
-    transform: translateY(60%);
+    transform: translateY(50%);
     display: hidden;
   }
   100% {
-    transform: translateY(30%);
+    transform: translateY(10%);
     opacity: 1;
     display: inline;
   }
@@ -88,7 +89,6 @@ body {
   .main-video {
     width: 450px;
     height: 220px;
-    margin-top: 40px;
     margin-bottom: 60px;
   }
 
@@ -111,7 +111,6 @@ body {
     .main-video {
         width: 600px;
         height: 390px;
-        margin-top: 60px;
         margin-bottom: 100px;
       }
     
