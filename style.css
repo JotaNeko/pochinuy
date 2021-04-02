@@ -10,10 +10,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
 }
 
 .main-video {
-    margin-top: 20px;
+  margin-top: 20px;
   opacity: 0;
   width: 230px;
   height: 165px;
@@ -93,8 +94,8 @@ body {
   }
 
   .instagram {
-    width: 20rem;
-    height: 20rem;
+    width: 15rem;
+    height: 15rem;
     margin-bottom: 45px;
   }
 
@@ -104,23 +105,23 @@ body {
 }
 
 @media screen and (min-width: 900px) {
-    .img-blur {
-        object-position: 0 12%;
-    }
+  .img-blur {
+    object-position: 0 12%;
+  }
 
-    .main-video {
-        width: 600px;
-        height: 390px;
-        margin-bottom: 100px;
-      }
-    
-      .instagram {
-        width: 25rem;
-        height: 25rem;
-        margin-bottom: 55px;
-      }
-    
-      .seguime {
-        font-size: 6rem;
-      }
+  .main-video {
+    width: 600px;
+    height: 390px;
+    margin-bottom: 100px;
+  }
+
+  .instagram {
+    width: 18rem;
+    height: 18rem;
+    margin-bottom: 55px;
+  }
+
+  .seguime {
+    font-size: 5rem;
+  }
 }
