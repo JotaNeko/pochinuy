@@ -5,88 +5,12 @@
 }
 
 body {
-  background-color: #f25287;
-  background: linear-gradient(-45deg, #dce6a4, #da467f, #6d6fe7, #05f81a);
-  background-size: 400% 400%;
-  animation: gradient 5s ease infinite;
+  background-color: #d259dd;
+  animation: gradient 2.5s ease-in infinite;
   display: block;
   font-family: "Lobster", cursive;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.action-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: -25px;
-  height: 100vh;
-}
-
-.main-video {
-  margin: 0px;
-  margin-top: 5px;
-  opacity: 0;
-  width: 230px;
-  height: 165px;
-  margin-bottom: 30px;
-  animation: fadeIn;
-  animation-duration: 1s;
-  animation-delay: 1.8s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
-}
-
-.texto-video {
-  box-shadow: 0px 0px 10px 10px #70d9da96;
-  padding: 6px;
-  opacity: 0;
-  font-size: 30px;
-  margin-top: -10px;
-  border: 3px;
-  border-style: solid;
-  border-color: black;
-  border-radius: 14px;
-  background-color: #a733c2;
-  animation: fadeIn;
-  animation-duration: 0.8s;
-  animation-delay: 2.6s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
-  color: #ffffff;
-}
-
-.instagram {
-  opacity: 0;
-  margin-top: 10px;
-  height: 80px;
-  width: 80px;
-  animation: fadeIn;
-  animation-duration: 1.3s;
-  animation-delay: 1.7s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
-}
-
-.seguime {
-  --shadow-color: #7972d33b;
-  --shadow-color-light: rgba(255, 0, 212, 0.685);
-  opacity: 0;
-  font-size: 1.9rem;
-  color: darkmagenta;
-  animation: fadeIn 1.3s forwards, neon 3s infinite;
-  animation-delay: 1.8s;
-  animation-timing-function: ease-in;
+  height: 104vh;
+  overflow: hidden;
 }
 
 .img-blur {
@@ -98,9 +22,129 @@ body {
   z-index: -1;
   animation: makeBlurred;
   animation-duration: 1.2s;
-  animation-delay: 1s;
+  animation-delay: 0.8s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
+}
+
+.action-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-video {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  margin-left: 11.3px;
+  margin-right: 10px;
+  opacity: 0;
+  animation: fadeIn;
+  animation-duration: 1s;
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+.main-video iframe {
+  width: 100%;
+  
+}
+
+.texto-video {
+  box-shadow: 0px 0px 10px 10px #4350ff75;
+  padding: 6px;
+  opacity: 0;
+  margin-top: 30px;
+  border: 3px;
+  border-style: solid;
+  border-color: #7274ce;
+  border-radius: 14px;
+  background-color: rgb(62,216,219);
+  background: linear-gradient(180deg, rgba(62,216,219,1) 0%, rgba(81,142,215,1) 34%, rgba(164,81,215,1) 100%);
+  animation: fadeIn;
+  animation-duration: 0.8s;
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  color: #f7feff;
+}
+.secondBox {
+  display: flex;
+  align-items: flex-start;
+  height: 100vh;
+  width: 100vw;
+}
+
+.instagramBox {
+  text-align: center;
+  margin-right: 10px;
+  height: 40vh;
+  width: 50vw;
+}
+
+.instagram {
+  opacity: 0;
+  margin-top: 10px;
+  height: 8rem;
+  width: 8rem;
+  animation: fadeIn;
+  animation-duration: 1.1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+.seguime {
+  --shadow-color: #7972d33b;
+  --shadow-color-light: rgba(255, 0, 212, 0.685);
+  opacity: 0;
+  font-size: 1.9rem;
+  color: rgb(255 254 254);
+  animation: fadeIn 1.3s forwards, neon 6s infinite;
+  animation-delay: 1.5s;
+  animation-timing-function: ease-in;
+}
+
+.confessionbox {
+  margin-left: 10px;
+  height: 40vh;
+  width: 50vw;
+}
+
+.icon-wrapper {
+  margin-top: 10px;
+  height: 8rem;
+  width: 8rem;
+  background: linear-gradient(124deg, rgba(158,58,180,1) 0%, rgb(48, 189, 182) 50%, rgba(252,72,69,1) 100%);
+  opacity: 0;
+  border-radius: 30px;
+  animation: fadeIn;
+  animation-duration: 1.1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+.confessiontext {
+  --shadow-color: #7972d33b;
+  --shadow-color-light: rgba(255, 0, 212, 0.685);
+  opacity: 0;
+  font-size: 1.9rem;
+  margin-top: 5px;
+  color: rgb(234 233 255);
+  animation: fadeIn 1.3s forwards, neon2 6s infinite;
+  animation-delay: 1.5s;
+  animation-timing-function: ease-in;
+}
+
+.icono {
+  font-size: 6rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+    color: snow;
 }
 
 @keyframes makeBlurred {
@@ -125,111 +169,89 @@ body {
   }
 }
 @keyframes neon {
-  0% {
-    text-shadow: -1px -1px 1px var(--shadow-color-light),
-      -1px 1px 1px var(--shadow-color-light),
-      1px -1px 1px var(--shadow-color-light),
-      1px 1px 1px var(--shadow-color-light), 0 0 3px var(--shadow-color-light),
-      0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
-      0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color),
-      0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color),
-      0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+  20% {
+    text-shadow: 2px 2px 20px rgb(255, 0, 0);
   }
   50% {
-    text-shadow: -1px -1px 1px var(--shadow-color-light),
-      -1px 1px 1px var(--shadow-color-light),
-      1px -1px 1px var(--shadow-color-light),
-      1px 1px 1px var(--shadow-color-light), 0 0 5px var(--shadow-color-light),
-      0 0 15px var(--shadow-color-light), 0 0 25px var(--shadow-color-light),
-      0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color),
-      0 0 60px var(--shadow-color), 0 0 80px var(--shadow-color),
-      0 0 110px var(--shadow-color), 0 0 210px var(--shadow-color);
+    text-shadow: 2px 2px 10px rgb(153, 0, 0);
   }
-  100% {
-    text-shadow: -1px -1px 1px var(--shadow-color-light),
-      -1px 1px 1px var(--shadow-color-light),
-      1px -1px 1px var(--shadow-color-light),
-      1px 1px 1px var(--shadow-color-light), 0 0 3px var(--shadow-color-light),
-      0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
-      0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color),
-      0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color),
-      0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+  80% {
+    text-shadow: 2px 2px 1px rgb(27, 0, 16);
   }
 }
 
-@media screen and (min-width: 550px) {
+@keyframes neon2 {
+  20% {
+    text-shadow: 0px 0px 20px rgb(17, 183, 171);
+  }
+  50% {
+    text-shadow: 2px 2px 10px rgb(61, 0, 64);
+  }
+  80% {
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
+  }
+}
+
+@keyframes gradient {
+  20% {
+    background: #b410b9;
+  }
+  40% {
+    background: #dd6996;
+  }
+  60% {
+    background: #ec63b8;
+  }
+  80% {
+    background: #cf44b8;
+  }
+}
+
+@media screen and (min-width: 400px) {
   .main-video {
-    width: 450px;
-    height: 220px;
-    margin-bottom: 60px;
+    width: 400px;
   }
-
-  .instagram {
-    width: 10rem;
-    height: 10rem;
-    margin-bottom: 45px;
-  }
-
-  .seguime {
-    font-size: 3rem;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .img-blur {
-    object-position: 0 12%;
-  }
-
   .texto-video {
-    margin-top: 0px;
+    font-size: x-large;
   }
-
-  .main-video {
-    width: 600px;
-    height: 390px;
-    margin-bottom: 40px;
+  .instagram{
+    height: 11rem;
+    width: 11rem;
   }
-
-  .instagram {
-    width: 12rem;
-    height: 12rem;
-    margin-bottom: -1px;
-  }
-
   .seguime {
-    font-size: 6rem;
+    font-size: 2.8rem;
+  }
+  .secondBox {
+    margin-left: 60px;
+  }
+ 
+  .confessiontext {
+    font-size: 2.8rem;
+  }
+  .icon-wrapper {
+    height: 11rem;
+    width: 11rem;
+  }
+  .icono {
+    font-size: 9rem;
   }
 }
+ 
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 700px) {
   .main-video {
-    width: 340px;
-    height: 230px;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    width: 700px;
   }
-
-  .instagram {
-    width: 8rem;
-    height: 8rem;
-    margin-top: 50%;
-  }
-
   .seguime {
-    font-size: 43px;
+    font-size: 3.4rem;
   }
+  .confessiontext {
+    font-size: 3.4rem;
+  }
+.icon-wrapper {
+  margin-left: 20px;
 }
-@media screen and (max-width: 300px) {
-  .main-video {
-    width: 305px;
-    height: 245px;
-  }
-
-  .instagram {
-    margin-top: 10px;
-  }
-
-  .seguime {
-    font-size: 2rem;
-  }
 }
+ @media screen and (min-width: 1024px) {
+
+ }
