@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-user-drag: none;
 }
 
 body {
@@ -77,6 +76,7 @@ body {
   align-items: flex-start;
   height: 100vh;
   width: 100vw;
+  -webkit-user-drag: none;
 }
 
 .instagramBox {
