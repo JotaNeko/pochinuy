@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/confesiones.css" />
+    <link rel="stylesheet" href="styles/confesionario.css" />
     <!-- Fonts ->
       <link rel="preconnect" href="https://fonts.gstatic.com"> -->
     <link
@@ -17,29 +17,30 @@
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
-    <title>Confesionario</title>
+    <title>Confesate</title>
   </head>
   <body>
     <main>
-      <h1>Confesiones</h1>
+        
+      <h1>Deja tu Confesion!</h1>
+      
       <div class="wrapper">
-        <div class="col">
-          <span class="goBack"
-            ><a href="index.html"
+        <form id="confesionForm">
+          <label for="titulo">Titulo para tu confesion?</label>
+          <input id="confesionTitulo" type="text" name="titulo" />
+          <label for="autor">Quien se confiesa?</label>
+          <input id="confesante" type="text" name="autor" />
+          <label for="texto">Confesion:</label>
+          <input id="confesionTexto" type="text" name="texto" />
+
+          <input type="submit"/>
+        </form>
+        <a class="goBack" href="confesiones.html"
               ><i class="far fa-arrow-alt-circle-left"></i></a
-          ></span>
-        </div>
-        <div class="middle">
-          <h2>Tus dirty little secrets...</h2>
-          <div class="confessionBox">
-            
-          </div>
-        </div>
-        <div class="col">
-          <span class="addConfession"><a href="confesionario.html"><i class="fas fa-bomb"></i></a></span>
-        </div>
+          >
       </div>
+
     </main>
-    <script src="scripts/confessions.js"></script>
+    <script src="scripts/confess.js"></script>
   </body>
 </html>

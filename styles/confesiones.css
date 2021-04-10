@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d259dd;
+  animation: gradient 2.5s ease-in infinite;
+  display: block;
+  font-family: "Lobster", cursive;
+  height: 104vh;
+}
+
+.img-blur {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: 0 13%;
+  position: absolute;
+  z-index: -1;
+  animation: makeBlurred;
+  animation-duration: 1.2s;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    width: 90%;
+    height: 100vh;
+}
+
+.col {
+    width: 10%;
+}
+
+.middle {
+    width: 80%;
+}
+
+.goBack {
+    font-size: 2rem;
+}
+
+.addConfession {
+    font-size: 2rem;
+}
+
+.confessionBox {
+}
+
+.confesion { 
+    background-color: rgb(192, 112, 112);
+    margin-bottom: 10px;
+}
+
+.confesion-titulo {
+    font-weight: 400;
+}
+
+.confesion-info {
+    display: flex;
+    flex-direction: row;
+}
+
+@keyframes makeBlurred {
+  0% {
+    filter: blur(0px);
+  }
+  100% {
+    filter: blur(20px);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes gradient {
+  20% {
+    background: #b410b9;
+  }
+  40% {
+    background: #dd6996;
+  }
+  60% {
+    background: #ec63b8;
+  }
+  80% {
+    background: #cf44b8;
+  }
+}
