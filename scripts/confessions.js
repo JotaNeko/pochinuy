@@ -14,9 +14,10 @@ window.onload = async () => {
     let confesionHtml = `
     <div class="confesion" id="${confesion.id}">
         <h3 class="confesion-titulo">${confesion.confessionTitle}</h3>
+        <p class="confesion-text">"${confesion.confessionText}"</p>
         <div class="confesion-info">
-            <p class="confesion-text">Confiesa: ${confesion.confessionTitle}</p>
-            <p class="confesion-text">Comentarios : ${confesion.comments.length}</p>
+            <p class="confesion-name">- ${confesion.name}</p>
+            
         </div>
     </div>
     `;

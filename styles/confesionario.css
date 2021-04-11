@@ -1,66 +1,116 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #d259dd;
-    animation: gradient 2.5s ease-in infinite;
-    display: block;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d259dd;
+  animation: gradient 2.5s ease-in infinite;
+  display: block;
+  font-family: "Lobster", cursive;
+  height: 104vh;
+  overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.img-blur {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: 0 13%;
+  position: absolute;
+  z-index: -1;
+  animation: makeBlurred;
+  animation-duration: 1.2s;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+.wrapper {
+    margin: 20px;
+}
+
+#confesionForm {
+  display: flex;
+  flex-direction: column;
+  max-width: 569px;
+  margin: auto;
+  -webkit-user-drag: none;
+}
+
+form > label {
+    margin: 5px;
+    font-size: 1.1rem;
+}
+
+.textbox {
+    font-size: 1.2rem;
+    height: 38px;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+textarea {
+    min-height: 70px;
+    font-size: 1.3rem;
+}
+
+.submit {
+    margin-top: 30px;
+    background-color: fuchsia;
+    cursor: pointer;
+    border-radius: 3.4px;
     font-family: "Lobster", cursive;
-    height: 104vh;
-    overflow: hidden;
-  }
-  
-  .img-blur {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    object-position: 0 13%;
-    position: absolute;
-    z-index: -1;
-    animation: makeBlurred;
-    animation-duration: 1.2s;
-    animation-delay: 0.8s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
-  }
+    color: ghostwhite;
+    font-size: 2rem;
+}
 
-  #confesionForm {
-      display: flex;
-      flex-direction: column;
-  }
+.goBack {
+  position: fixed;
+  bottom: 20px;
+  left: 10px;
+  opacity: 0.6;
+  font-size: 3rem;
+}
 
-  .goBack {
-      position: fixed;
-      bottom: 20px;
-      left: 10px;
-      font-size: 2rem;
-  }
 
-  @keyframes makeBlurred {
-    0% {
-      filter: blur(0px);
-    }
-    100% {
-      filter: blur(20px);
-      transform: scale(0.9);
-    }
+@keyframes makeBlurred {
+  0% {
+    filter: blur(0px);
   }
-  
-  @keyframes gradient {
-    20% {
-      background: #b410b9;
-    }
-    40% {
-      background: #dd6996;
-    }
-    60% {
-      background: #ec63b8;
-    }
-    80% {
-      background: #cf44b8;
+  100% {
+    filter: blur(20px);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes gradient {
+  20% {
+    background: #e18be4;
+  }
+  40% {
+    background: #c08ace;
+  }
+  60% {
+    background: #c287ca;
+  }
+  80% {
+    background: #b17dc9;
+  }
+}
+
+
+@media screen and (min-width: 400px) {
+    form > label {
+        margin: 10px;
+        font-size: 1.8rem;
     }
   }
   
