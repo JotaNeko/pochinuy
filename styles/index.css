@@ -10,7 +10,6 @@ body {
   display: block;
   font-family: "Lobster", cursive;
   height: 100vh;
-  overflow: hidden;
 }
 
 .img-blur {
@@ -35,7 +34,7 @@ body {
 }
 
 .main-video {
-  height: 80%;
+  height: 30%;
   max-height: 300px;
   width: 100%;
   max-width: 500px;
@@ -117,8 +116,8 @@ body {
 
 .icon-wrapper {
   margin-top: 10px;
-  height: 9rem;
-  width: 9rem;
+  height: 8rem;
+  width: 8rem;
   background: linear-gradient(
     124deg,
     rgba(158, 58, 180, 1) 0%,
@@ -148,7 +147,7 @@ body {
 
 .icono {
   font-size: 6rem;
-  margin-top: 0.8rem;
+  margin-top: 1rem;
   color: snow;
 }
 

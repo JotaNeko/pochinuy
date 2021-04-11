@@ -58,7 +58,7 @@ a {
 }
 
 .addConfession a i {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: black;
   background-color: aliceblue;
   padding: 5px;
@@ -70,7 +70,8 @@ a {
   background-color: rgb(255, 255, 255);
   margin-bottom: 15px;
   padding: 4px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   border-radius: 4px;
   border: 2px solid aliceblue;
 }
