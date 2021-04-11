@@ -138,3 +138,26 @@ a {
     transform: scale(1);
   }
 }
+
+@media screen and (min-width: 670px) {
+  .goBack {
+    position: relative;
+    left: -10px;
+    font-size: 3rem;
+  }
+
+  .confesate-aca {
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .goBack {
+    position: relative;
+  }
+
+  .confesate-aca {
+    position: relative;
+    white-space: nowrap;
+  }
+}
