@@ -17,25 +17,40 @@
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-MXZRMNX9WW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-MXZRMNX9WW");
+    </script>
+    
     <title>Confesion Secreta</title>
   </head>
   <body>
     <main>
       <div class="modal">
         <form id="confesionForm">
-            <label for="autor">Apodo</label>
-            <input class="textbox" id="confesante" type="text" name="autor" />
-            <label for="texto">Comentario:</label>
-            <textarea
-              class="textbox"
-              id="confesionTexto"
-              type="text"
-              name="texto"
-            ></textarea>
-    
-            <input class="submit" type="submit" />
+          <label for="autor">Apodo</label>
+          <input class="textbox" id="confesante" type="text" name="autor" />
+          <label for="texto">Comentario:</label>
+          <textarea
+            class="textbox"
+            id="confesionTexto"
+            type="text"
+            name="texto"
+          ></textarea>
+
+          <input class="submit" type="submit" />
         </form>
-          <button class="volver" onclick="modalOff()">Volver</button>
+        <button class="volver" onclick="modalOff()">Volver</button>
       </div>
       <h1>Lee los comentarios!</h1>
 
@@ -50,11 +65,9 @@
           <div class="confessionBox"></div>
         </div>
         <div class="col">
-          <p class="confesate-aca" onclick='showModal()'>Agregar comentario</p>
+          <p class="confesate-aca" onclick="showModal()">Agregar comentario</p>
         </div>
       </div>
-
-      
     </main>
     <script src="scripts/comment.js"></script>
   </body>
