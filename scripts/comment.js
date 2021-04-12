@@ -37,7 +37,7 @@ window.onload = async () => {
   });
 
   confession = await fetch(
-    `http://localhost:8000/${location.search.slice(4)}`
+    `https://confesionario-back-end.vercel.app/${location.search.slice(4)}`
   ).then((res) => res.json());
   console.log(confession);
 
