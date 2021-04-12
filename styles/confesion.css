@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d259dd;
+  animation: gradient 2.5s ease-in infinite;
+  display: block;
+  font-family: "Lobster", cursive;
+  height: 104vh;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.767);
+  padding: 0px 20px;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  display: none;
+}
+
+.modalConfession {
+  display: flex;
+  flex-direction: column;
+  background-color: ghostwhite;
+  padding: 10px;
+  height: 100vw;
+  margin: auto;
+  max-width: 500px;
+}
+
+#confesionForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 20px auto;
+    -webkit-user-drag: none;
+  }
+  
+  form > label {
+      margin: 5px;
+      color: whitesmoke;
+      font-size: 1.2rem;
+  }
+  
+  .textbox {
+      font-size: 1.2rem;
+      height: 38px;
+      border-radius: 4px;
+      padding: 8px;
+  }
+  
+  textarea {
+      min-height: 70px;
+      font-size: 1.3rem;
+  }
+  
+  .submit {
+      margin-top: 30px;
+      background-color: fuchsia;
+      cursor: pointer;
+      border-radius: 3.4px;
+      font-family: "Lobster", cursive;
+      color: ghostwhite;
+      font-size: 2rem;
+  }
+
+.commentBox {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  background-color: rgb(217, 217, 224);
+  border: 3px solid rgb(150, 149, 149);
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.comment {
+
+}
+
+.wrapper {
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  max-width: 500px;
+}
+
+.col {
+  width: 10%;
+}
+
+.middle {
+  width: 80%;
+}
+
+.goBack {
+  position: fixed;
+  bottom: 30px;
+  left: 10px;
+  font-size: 2rem;
+}
+
+.confesate-aca {
+  position: fixed;
+  bottom: 30px;
+  color: #541e58;
+  right: 10px;
+  font-size: 2rem;
+  text-shadow: 2px 2px 5px rgb(245, 245, 245);
+  animation: neon 2s ease-in-out infinite;
+}
+
+.confesion {
+  background-color: rgb(255, 255, 255);
+  margin-top: 15px;
+  padding: 4px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border-radius: 4px;
+  border: 2px solid aliceblue;
+}
+
+.confesion-titulo {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.confesion-text {
+  margin-bottom: 10px;
+}
+
+.confesion-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

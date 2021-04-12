@@ -3,21 +3,24 @@ let confesiones = [];
 let url = {
   confesiones: "https://confesionario-back-end.vercel.app/",
 };
+
+
 window.onload = async () => {
   let confesionContainer = document.querySelector(".confessionBox");
   const data = await fetch(url.confesiones).then((res) => res.json());
 
-  console.log(data.map(e => console.log('e', e)
-  ));
+  data.map((confesion, key) => {
+    console.log(confesion._id);
 
-  data.map((confesion) => {
     let confesionHtml = `
-    <div class="confesion" id="${confesion.id}">
+    <div class="confesion ${key === data.length -1 ? 'lastConfesion' : ''}">
         <h3 class="confesion-titulo">${confesion.confessionTitle}</h3>
         <p class="confesion-text">"${confesion.confessionText}"</p>
         <div class="confesion-info">
             <p class="confesion-name">- ${confesion.name}</p>
-            
+            <a href="confesion.html?id=${confesion._id}"> 
+                <p class="confesion-name">Comentarios: ${confesion.comments.length}</p> 
+            </a>
         </div>
     </div>
     `;
@@ -25,7 +28,6 @@ window.onload = async () => {
   });
 
   confesiones.map((confesion) => {
-    console.log(confesion);
-    confesionContainer.innerHTML += confesion
+    confesionContainer.innerHTML += confesion;
   });
 };

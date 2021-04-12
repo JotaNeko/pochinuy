@@ -9,7 +9,7 @@ body {
   animation: gradient 5.5s ease-in infinite;
   display: block;
   font-family: "Lobster", cursive;
-  height: 104vh;
+  height: 100vh;
 }
 
 .img-blur {
@@ -40,9 +40,7 @@ a {
   display: flex;
   margin: auto;
   flex-direction: row;
-
   max-width: 500px;
-  height: 100vh;
 }
 
 .col {
@@ -71,12 +69,16 @@ a {
 
 .confesion {
   background-color: rgb(255, 255, 255);
-  margin-bottom: 15px;
+  margin-top: 15px;
   padding: 4px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   border-radius: 4px;
   border: 2px solid aliceblue;
+}
+
+.lastConfesion {
+  margin-bottom: 85px !important;
 }
 
 .confesion-titulo {
@@ -91,6 +93,7 @@ a {
 .confesion-info {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 @keyframes makeBlurred {
