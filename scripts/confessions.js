@@ -1,13 +1,12 @@
+let localUrl = "http://localhost:8000/";
+let deployedUrl = "https://confesionario-back-end.vercel.app/"
 let confesiones = [];
 
-let url = {
-  confesiones: "https://confesionario-back-end.vercel.app/",
-};
 
 
 window.onload = async () => {
   let confesionContainer = document.querySelector(".confessionBox");
-  const data = await fetch(url.confesiones).then((res) => res.json());
+  const data = await fetch(deployedUrl).then((res) => res.json());
 
   data.map((confesion, key) => {
     console.log(confesion._id);

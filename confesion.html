@@ -21,7 +21,7 @@
   </head>
   <body>
     <main>
-      <div onclick="(e) => modalOff(e)" class="modal">
+      <div class="modal">
         <form id="confesionForm">
             <label for="autor">Apodo</label>
             <input class="textbox" id="confesante" type="text" name="autor" />
@@ -34,7 +34,8 @@
             ></textarea>
     
             <input class="submit" type="submit" />
-          </form>
+        </form>
+          <button class="volver" onclick="modalOff()">Volver</button>
       </div>
       <h1>Lee los comentarios!</h1>
 

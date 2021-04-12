@@ -1,46 +1,34 @@
+let localUrl = "http://localhost:8000/";
+let deployedUrl = "https://confesionario-back-end.vercel.app/";
 let confession;
 
 function showModal() {
   let modal = document.querySelector(".modal");
+  let goBack = document.querySelector(".goBack");
+  let confessionButton = document.querySelector(".confesate-aca");
 
   modal.style.display = "flex";
+  goBack.style.display = "none";
+  confessionButton.style.display = "none";
 }
 
-function modalOff(e) {
-  e.stopPropagation();
+function modalOff() {
+  let goBack = document.querySelector(".goBack");
+  let confessionButton = document.querySelector(".confesate-aca");
   let modal = document.querySelector(".modal");
 
   modal.style.display = "none";
+  goBack.style.display = "initial";
+  confessionButton.style.display = "initial";
 }
 
 window.onload = async () => {
   let confesionContainer = document.querySelector(".confessionBox");
   let form = document.querySelector("#confesionForm");
 
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    let confessionText = document.querySelector("#confesionTexto").value;
-    let author = document.querySelector("#confesante").value;
-
-    let sendConfession = await fetch(
-      "https://confesionario-back-end.vercel.app/comentar",
-      {
-        method: "POST",
-        mode: "cors",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({confessionText, author }),
-      }
-    ).then((response) => response.json());
-
-    location.reload();
-  });
-
   confession = await fetch(
-    `https://confesionario-back-end.vercel.app/${location.search.slice(4)}`
+    deployedUrl + `${location.search.slice(4)}`
   ).then((res) => res.json());
-  console.log(confession);
 
   let confesionHtml = `
       <div class="confesion">
@@ -50,17 +38,43 @@ window.onload = async () => {
               <p class="confesion-name">- ${confession.name}</p>
           </div>
           <div class="commentBox"> 
-              ${confession.comments.map((comment) => {
-                return `
-                  <div class="comment">
-                        <p class="coment-author">- ${comment.author}</p>
-                        <p class="coment-text">- ${comment.commentText}</p>
-                  </div>
-                  `;
-              })}
           </div>
       </div>
       `;
 
   confesionContainer.innerHTML += confesionHtml;
+
+  let commentContainer = document.querySelector(".commentBox");
+  let commentHtml = "";
+
+  confession.comments.map((comment) => {
+    commentHtml += `
+          <div class="comment">
+              <p class="commentAuthor">${comment.author.length > 1 ? comment.author : 'Anonim@'}:</p>
+              <p class="commentText">${comment.commentText}</p>
+          </div>
+    `;
+  });
+
+  commentContainer.innerHTML += commentHtml;
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    let commentText = document.querySelector("#confesionTexto").value;
+    let author = document.querySelector("#confesante").value;
+
+    let sendConfession = await fetch(deployedUrl + "comentar", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        commentText,
+        author,
+        confessionId: confession._id,
+      }),
+    }).then((response) => response.json());
+
+    location.reload();
+  });
 };

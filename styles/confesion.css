@@ -9,8 +9,6 @@ body {
   animation: gradient 2.5s ease-in infinite;
   display: block;
   font-family: "Lobster", cursive;
-  height: 104vh;
-  overflow: hidden;
 }
 
 h1 {
@@ -27,17 +25,9 @@ h1 {
   height: 100vh;
   width: 100vw;
   display: none;
+  flex-direction: column;
 }
 
-.modalConfession {
-  display: flex;
-  flex-direction: column;
-  background-color: ghostwhite;
-  padding: 10px;
-  height: 100vw;
-  margin: auto;
-  max-width: 500px;
-}
 
 #confesionForm {
     display: flex;
@@ -77,16 +67,28 @@ h1 {
 
 .commentBox {
   margin-top: 15px;
-  margin-bottom: 20px;
+  padding: 2px;
+  margin-bottom: 80px;
   background-color: rgb(217, 217, 224);
-  border: 3px solid rgb(150, 149, 149);
   height: 100%;
   width: 100%;
   border-radius: 5px;
 }
 
 .comment {
+  margin-bottom: 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
 
+.commentAuthor {
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: underline;
+}
+
+.commentText {
+  font-size: 1.2rem;
 }
 
 .wrapper {
@@ -121,6 +123,18 @@ h1 {
   animation: neon 2s ease-in-out infinite;
 }
 
+.volver {
+  width: 300px;
+  height: 120px;
+  border-radius: 8px;
+  background-color: rgb(255, 164, 255);
+  align-self: center;
+  margin-top: 20px;
+  font-size: 2.2rem;
+  font-family: 'Lobster';
+  color: whitesmoke;
+}
+
 .confesion {
   background-color: rgb(255, 255, 255);
   margin-top: 15px;
@@ -133,10 +147,12 @@ h1 {
 
 .confesion-titulo {
   font-weight: 400;
+  font-size: 1.3rem;
   margin-bottom: 10px;
 }
 
 .confesion-text {
+  font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
@@ -144,4 +160,28 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+@media screen and (min-width: 670px) {
+  .goBack {
+    position: relative;
+    left: -10px;
+    font-size: 3rem;
+  }
+
+  .confesate-aca {
+    position: relative;
+    left: 10px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .goBack {
+    position: relative;
+  }
+
+  .confesate-aca {
+    position: relative;
+    white-space: nowrap;
+  }
 }
