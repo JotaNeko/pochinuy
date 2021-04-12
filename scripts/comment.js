@@ -26,6 +26,7 @@ window.onload = async () => {
       "https://confesionario-back-end.vercel.app/comentar",
       {
         method: "POST",
+        mode: "cors",
         headers: {
           "Content-Type": "application/json",
         },
