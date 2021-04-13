@@ -58,9 +58,23 @@ a {
   font-size: 2rem;
 }
 
+
+.conversationIcon {
+  background-color: whitesmoke;
+  padding: 3px 9px;
+  border-radius: 50%;
+  
+  margin-right: 15px;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+
 .confesate-aca {
   position: fixed;
+  display: flex;
+  flex-direction: row;
   bottom: 30px;
+  height: 50px;
   right: 10px;
   font-size: 2rem;
   text-shadow: 2px 2px 5px rgb(245, 245, 245);
@@ -142,7 +156,7 @@ a {
   }
 }
 
-@media screen and (min-width: 670px) {
+@media screen and (min-width: 870px) {
   .goBack {
     position: relative;
     left: -10px;
@@ -151,16 +165,8 @@ a {
 
   .confesate-aca {
     position: relative;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .goBack {
-    position: relative;
-  }
-
-  .confesate-aca {
-    position: relative;
     white-space: nowrap;
   }
 }
+
+
