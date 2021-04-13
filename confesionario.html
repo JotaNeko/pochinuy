@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/confesionario.css" />
+    <meta
+      name="description"
+      content="Queremos saber tu secreto mas sucio! Dejanos unas palabras para conocerte mejor."
+    />
+    <meta
+      name="keywords"
+      content="LGBTQ+, Artista, interacciones reales, Diverso, Friendly, Gay, comunidad"
+    />
     <!-- Fonts ->
       <link rel="preconnect" href="https://fonts.gstatic.com"> -->
     <link
@@ -31,30 +39,38 @@
 
       gtag("config", "G-MXZRMNX9WW");
     </script>
-    
+
     <title>Confesate</title>
   </head>
   <body>
     <main>
-        
       <h1>Deja tu Confesión!</h1>
-      
+
       <div class="wrapper">
         <form id="confesionForm">
           <label for="titulo">Título para tu confesión?</label>
-          <input class="textbox" id="confesionTitulo" type="text" name="titulo" />
+          <input
+            class="textbox"
+            id="confesionTitulo"
+            type="text"
+            name="titulo"
+          />
           <label for="autor">Quién se confiesa?</label>
           <input class="textbox" id="confesante" type="text" name="autor" />
           <label for="texto">Confesión:</label>
-          <textarea class="textbox" id="confesionTexto" type="text" name="texto"></textarea>
+          <textarea
+            class="textbox"
+            id="confesionTexto"
+            type="text"
+            name="texto"
+          ></textarea>
 
-          <input class="submit" type="submit">
+          <input class="submit" type="submit" />
         </form>
         <a class="goBack" href="confesiones.html"
-              ><i class="far fa-arrow-alt-circle-left"></i></a
-          >
+          ><i class="far fa-arrow-alt-circle-left"></i
+        ></a>
       </div>
-
     </main>
     <script src="scripts/confess.js"></script>
   </body>
