@@ -14,9 +14,13 @@ body {
 }
 
 h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 20px;
+  margin-bottom: 35px;
+  font-family: fantasy;
+  font-size: 50px;
+  background-color: #ff93ff;
+  color: #9d2277;
+  border-bottom: dashed;
+  text-align: center;
 }
 
 .img-blur {

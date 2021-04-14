@@ -26,7 +26,16 @@ body {
   animation-timing-function: ease-in;
 }
 
-h1,
+h1 {
+  margin-bottom: 35px;
+  font-family: fantasy;
+  font-size: 50px;
+  background-color: #ff93ff;
+  color: #9d2277;
+  border-bottom: dashed;
+  text-align: center;
+}
+
 h2 {
   text-align: center;
   margin-bottom: 20px;
@@ -53,27 +62,25 @@ a {
 
 .goBack {
   position: fixed;
-  bottom: 30px;
+  bottom: 20px;
   left: 10px;
-  font-size: 2rem;
+  font-size: 4.2rem;
 }
-
 
 .conversationIcon {
   background-color: whitesmoke;
   padding: 3px 9px;
   border-radius: 50%;
-  
+
   margin-right: 15px;
   animation: pulse 1s ease-in-out infinite;
 }
-
 
 .confesate-aca {
   position: fixed;
   display: flex;
   flex-direction: row;
-  bottom: 30px;
+  bottom: 40px;
   height: 50px;
   right: 10px;
   font-size: 2rem;
@@ -168,5 +175,3 @@ a {
     white-space: nowrap;
   }
 }
-
-
