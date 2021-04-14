@@ -72,7 +72,7 @@ textarea {
   margin-top: 15px;
   padding: 2px;
   margin-bottom: 80px;
-  background-color: rgb(217, 217, 224);
+  background-color: rgb(138 236 255);
   height: 100%;
   width: 100%;
   border-radius: 5px;
@@ -121,10 +121,11 @@ textarea {
   display: flex;
   flex-direction: row;
   align-items: center;
-  bottom: 40px;
+  bottom: 23px;
   margin-top: 20px;
   color: #541e58;
-  right: 10px;
+  right: 63px;
+  max-width: 150px;
   font-size: 2rem;
   text-shadow: 2px 2px 5px rgb(245, 245, 245);
   animation: neon 2s ease-in-out infinite;
@@ -211,7 +212,6 @@ textarea {
 }
 
 @media screen and (min-width: 1080px) {
-
   .confesate-aca {
     white-space: nowrap;
   }
