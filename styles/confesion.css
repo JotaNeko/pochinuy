@@ -72,7 +72,7 @@ textarea {
   margin-top: 15px;
   padding: 2px;
   margin-bottom: 80px;
-  background-color: rgb(138 236 255);
+  background-color: skyblue;
   height: 100%;
   width: 100%;
   border-radius: 5px;
@@ -207,6 +207,7 @@ textarea {
 
   .confesate-aca {
     position: relative;
+    bottom: 40px;
     left: 10px;
   }
 }
