@@ -5,10 +5,13 @@
 }
 
 body {
-  background-color: #d259dd;
-  animation: gradient 2.5s ease-in infinite;
+  background-color: #0f2e67;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%230f2e67' cx='50' cy='0' r='50'/%3E%3Cg fill='%232e2f6a' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%2342316b' cx='50' cy='100' r='50'/%3E%3Cg fill='%2354326c' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%2364336b' cx='50' cy='200' r='50'/%3E%3Cg fill='%23723569' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%237f3867' cx='50' cy='300' r='50'/%3E%3Cg fill='%238b3b64' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23964061' cx='50' cy='400' r='50'/%3E%3Cg fill='%239f455d' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a64c59' cx='50' cy='500' r='50'/%3E%3Cg fill='%23ad5355' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b25c52' cx='50' cy='600' r='50'/%3E%3Cg fill='%23b5654f' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b86e4d' cx='50' cy='700' r='50'/%3E%3Cg fill='%23b9784b' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b9814b' cx='50' cy='800' r='50'/%3E%3Cg fill='%23b98b4d' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b79550' cx='50' cy='900' r='50'/%3E%3Cg fill='%23b49f55' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b0a95c' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: contain;
   display: block;
-  font-family: "Lobster", cursive;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif,
+    cursive;
   height: 104vh;
   overflow: hidden;
 }
@@ -17,9 +20,10 @@ h1 {
   margin-bottom: 35px;
   font-family: fantasy;
   font-size: 50px;
-  background-color: #ff93ff;
-  color: #9d2277;
+  color: #e18be4;
+  background-color: #54326c;
   border-bottom: dashed;
+  text-shadow: 0px -2px 2px #400c40;
   text-align: center;
 }
 
@@ -38,7 +42,9 @@ h1 {
 }
 
 .wrapper {
-    margin: 20px;
+  margin: 20px;
+  font-family: monospace;
+  color: #b25c52;
 }
 
 #confesionForm {
@@ -47,43 +53,48 @@ h1 {
   max-width: 569px;
   margin: auto;
   -webkit-user-drag: none;
+  box-shadow: 0px 0px 35px 11px;
+  height: 304px;
 }
 
 form > label {
-    margin: 5px;
-    font-size: 1.1rem;
+  margin: 5px;
+  color: antiquewhite;
+  font-size: 1.1rem;
+  font-family: "Lobster";
+  text-shadow: 0px 0px 15px;
 }
 
 .textbox {
-    font-size: 1.2rem;
-    height: 38px;
-    border-radius: 4px;
-    padding: 8px;
+  font-size: 1.2rem;
+  height: 38px;
+  border-radius: 4px;
+  padding: 8px;
 }
 
 textarea {
-    min-height: 70px;
-    font-size: 1.3rem;
+  min-height: 70px;
+  font-size: 1.3rem;
 }
 
 .submit {
-    margin-top: 30px;
-    background-color: fuchsia;
-    cursor: pointer;
-    border-radius: 3.4px;
-    font-family: "Lobster", cursive;
-    color: ghostwhite;
-    font-size: 2rem;
+  margin-top: 30px;
+  background-color: #7c32b9;
+  cursor: pointer;
+  border-radius: 3.4px;
+  font-family: "Lobster", cursive;
+  color: ghostwhite;
+  font-size: 2rem;
 }
 
 .goBack {
   position: fixed;
   bottom: 20px;
   left: 10px;
-  opacity: 0.6;
+  opacity: 0.9;
   font-size: 3rem;
+  color: #ffff;
 }
-
 
 @keyframes makeBlurred {
   0% {
@@ -110,11 +121,9 @@ textarea {
   }
 }
 
-
 @media screen and (min-width: 400px) {
-    form > label {
-        margin: 10px;
-        font-size: 1.8rem;
-    }
+  form > label {
+    margin: 10px;
+    font-size: 1.8rem;
   }
-  
+}
