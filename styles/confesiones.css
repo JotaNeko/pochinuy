@@ -5,11 +5,13 @@
 }
 
 body {
-  background-color: #f15dff;
-  animation: gradient 5.5s ease-in infinite;
   display: block;
   font-family: "Lobster", cursive;
   height: 100vh;
+  background-color: #143d88;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23143d88' cx='50' cy='0' r='50'/%3E%3Cg fill='%233e3f8b' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%2359408d' cx='50' cy='100' r='50'/%3E%3Cg fill='%236f418d' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%2384438c' cx='50' cy='200' r='50'/%3E%3Cg fill='%23964589' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a64886' cx='50' cy='300' r='50'/%3E%3Cg fill='%23b54c82' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c2527d' cx='50' cy='400' r='50'/%3E%3Cg fill='%23ce5978' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23d86273' cx='50' cy='500' r='50'/%3E%3Cg fill='%23df6c6e' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e6766a' cx='50' cy='600' r='50'/%3E%3Cg fill='%23ea8266' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ed8e63' cx='50' cy='700' r='50'/%3E%3Cg fill='%23ef9a61' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23efa761' cx='50' cy='800' r='50'/%3E%3Cg fill='%23eeb363' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ebc067' cx='50' cy='900' r='50'/%3E%3Cg fill='%23e8cd6d' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e3d976' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: contain;
 }
 
 .img-blur {
@@ -30,13 +32,15 @@ h1 {
   margin-bottom: 35px;
   font-family: fantasy;
   font-size: 50px;
-  background-color: #ff93ff;
-  color: #9d2277;
+  background-color: rgb(144 67 140);
+  color: #fff5fd;
   border-bottom: dashed;
   text-align: center;
 }
 
 h2 {
+  color: #f9a3ff;
+  font-size: 35px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -49,7 +53,7 @@ a {
   display: flex;
   margin: auto;
   flex-direction: row;
-  max-width: 500px;
+  max-width: 520px;
 }
 
 .col {
@@ -58,6 +62,9 @@ a {
 
 .middle {
   width: 80%;
+  box-shadow: 0px -3px 20px 0 #00000070, 0 26px 43px 4px #ff7863,
+    0 0px 0px 0px #f9050500;
+  border-radius: 21px;
 }
 
 .goBack {
@@ -68,29 +75,32 @@ a {
 }
 
 .conversationIcon {
-  background-color: whitesmoke;
+  background-color: rgb(255 0 241 / 22%);
   padding: 3px 9px;
   border-radius: 50%;
-
   margin-right: 15px;
   animation: pulse 1s ease-in-out infinite;
+  box-shadow: 0px 0px 2px 5px #f79eff;
 }
 
 .confesate-aca {
   position: fixed;
   display: flex;
   flex-direction: row;
-  bottom: 40px;
+  bottom: 35px;
   height: 50px;
   right: 10px;
   font-size: 2rem;
-  text-shadow: 2px 2px 5px rgb(245, 245, 245);
-  animation: neon 2s ease-in-out infinite;
+  color: #f9a3ff;
+  text-shadow: 2px 2px 5px rgb(29, 26, 26);
+  animation: neon 10s ease-in-out infinite;
 }
 
 .confesion {
   background-color: rgb(255, 255, 255);
   margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
   padding: 4px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -117,6 +127,19 @@ a {
   justify-content: space-between;
 }
 
+.fa {
+  color: white;
+}
+
+.far {
+  color: #f8a2fe;
+  font-family: "Font Awesome 5 Free";
+}
+
+.fas {
+  color: rgb(255, 255, 255);
+}
+
 @keyframes makeBlurred {
   0% {
     filter: blur(0px);
@@ -141,13 +164,13 @@ a {
 
 @keyframes neon {
   0% {
-    text-shadow: -2px 2px -1px rgb(255, 255, 255);
+    text-shadow: -2px 2px -1px rgb(65, 57, 57);
   }
   50% {
-    text-shadow: 2px 2px 10px rgb(255, 255, 255);
+    text-shadow: 2px 2px 10px rgb(77, 34, 34);
   }
   100% {
-    text-shadow: -2px 2px -1px rgb(255, 255, 255);
+    text-shadow: -2px 2px -1px rgb(80, 9, 9);
   }
 }
 

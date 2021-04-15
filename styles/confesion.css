@@ -69,10 +69,12 @@ textarea {
 }
 
 .commentBox {
+  border-top-style: inherit;
+  border-color: #ffd0ff;
   margin-top: 15px;
   padding: 2px;
   margin-bottom: 80px;
-  background-color: rgb(138 236 255);
+  background-color: rgb(255 169 255);
   height: 100%;
   width: 100%;
   border-radius: 5px;
@@ -92,6 +94,10 @@ textarea {
 
 .commentText {
   font-size: 1.2rem;
+  border-bottom-style: dashed;
+    border-width: 3.7px;
+    border-color: #ffd1ff;
+    margin-top: 7px;
 }
 
 .wrapper {
@@ -154,7 +160,12 @@ textarea {
 }
 
 .confesion {
-  background-color: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgb(255 211 255) 0%,
+    #ffa5ff 85%,
+    #ffd5ff 100%
+  );
   margin-top: 15px;
   padding: 4px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -164,20 +175,31 @@ textarea {
 }
 
 .confesion-titulo {
-  font-weight: 400;
+  font:caption;
+  font-weight: 800;
   font-size: 1.3rem;
+  text-align: center;
+  color: #551a8b;
   margin-bottom: 10px;
+  border-bottom-style: inset;
+  border-color: #ff8cff;
 }
 
 .confesion-text {
   font-size: 1.2rem;
   margin-bottom: 10px;
+  border-style: outset;
+  border-block-end: initial;
+  border-color: #ffa6ff;
 }
 
 .confesion-info {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border-style: outset;
+  border-color: #ffa9ff;
+  border-block-start: initial;
 }
 
 @keyframes pulse {
